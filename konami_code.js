@@ -15,7 +15,7 @@ var index = 0;
 
 
 function init() {
-  document.body.addEventListener("keypress", function(event) {
+  document.body.addEventListener("keydown", function(event) {
     checkIfEventIsCorrect(event);
 });
 }
