@@ -25,7 +25,7 @@ function init() {
 
 function addListener(eventType, node){
   console.log(node.events)
-  node.addEventListener(eventType, function(event) {
+  node.addEventListener("keypress", function(event) {
     console.log("trigger")
     checkIfEventIsCorrect(event);
 });
