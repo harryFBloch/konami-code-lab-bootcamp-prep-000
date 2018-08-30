@@ -15,17 +15,7 @@ var index = 0;
 
 
 function init() {
-
-  var body = document.getElementsByTagName("body")[0];
-  for (let i = 0; i < codes.length; i++){
-    addListener(codes[i], body)
-    //addListener('click', body)
-  }
-}
-
-function addListener(eventType, node){
-  console.log(node.events)
-  node.addEventListener("keypress", function(event) {
+  document.body.addEventListener("keypress", function(event) {
     console.log("trigger")
     checkIfEventIsCorrect(event);
 });
