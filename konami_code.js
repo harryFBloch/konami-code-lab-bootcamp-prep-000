@@ -21,6 +21,7 @@ function init() {
 }
 
 function checkIfEventIsCorrect(event){
+  console.log(event.key)
   if(event.key === codes[index]){
     if (index === codes.length - 1){
       alert("You Found Me");
